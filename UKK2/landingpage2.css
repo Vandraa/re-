@@ -1,0 +1,26 @@
+*{
+    color: #000;
+    font-family: sans-serif;  
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: #f3f1f1;
+}
+
+.nav{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 16px;
+    margin: 30px;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+}
+
+

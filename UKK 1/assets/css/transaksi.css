@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    background-color: #f3f1f1;
+}
+
+* {
+    font-family: calibri;
+    color: #000;
+    font-family: sans-serif;  
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.nav {
+    border-radius: 5px;
+    background-color: #C4C4C4;
+    margin: 30px;
+    padding: 16px;
+}
+
+.nav__item {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item--1 {
+    margin-left: 50px;
+}
+
+.nav__item--2{
+    margin-left: 70px;
+}
+
+.nav__item--3{
+    margin-right: 25px;
+}
+
+main{
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    margin: 30px;
+    height: 410px;
+}
+
+.main__body {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 400px;
+}
+
+.main__body input{
+    margin-top: 2%;
+}
+
+.transactionNumber{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.transactionDate{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 61px;
+}
+
+.customerName{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 77px;
+}
+
+.selectedPackage{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.packagePrice{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 106px;
+}
+
+.float-right{
+    width: max-content;
+    margin-right:40% ;
+    display: flex;
+    position: relative;
+    left: 110vh;
+    bottom: 28vh;
+    flex-direction: column;
+}
+
+.button-1{
+    width: 15%;
+    position: relative;
+    border-radius: 5px;
+    border: 0px;
+    bottom: 12vh;
+    height: 50px;
+    margin-left: 65%;
+}
+
+.main__out label{
+    margin-left: 5%;
+}
+
+.totalPrice{
+    width: 25%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 105px;
+}
+
+.Payment{
+    width: 31%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 5px;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.button-2{
+    width: 15%;
+    border-radius: 5px;
+    border: 0px;
+    bottom: 12vh;
+    height: 50px; 
+    margin-left: 59vh;
+}
+
+.button-3{
+    float: right;
+    width: 15%;
+    border-radius: 5px;
+    border: 0px;
+    height: 50px;
+    margin-left: 66vh;
+}
+
+.out__float-right{
+    align-items: center;
+    display: flex;
+    float: right;
+    position: relative;
+    bottom:100px;
+    right: 25vh;
+}
+
+.out__float-right input{
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    margin-left:50px;
+}
+
+.popup{
+    width: 20%;
+    height: 30%;
+    background: #C4C4C4;
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 70%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup p{
+    margin-top: 20%;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.popup button{
+    width: 30%;
+    height: 10%;
+    margin-top: 15%;
+}
+
+footer{
+    border-radius: 5px;
+    background-color: #C4C4C4;
+    margin: 30px;
+    padding: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+
+    .nav__item--1,
+    .nav__item--2,
+    .nav__item--3 {
+        margin: 10px; /* Reset margin for each item */
+    }
+
+
+    main {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .main__body {
+        margin: 2% 5%;
+    }
+
+    .float-right {
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .button-1 {
+        width: 100%;
+        margin-left: 0;
+        bottom: 0;
+    }
+
+    .main__out {
+        margin: 2% 5%;
+    }
+
+    .float-right {
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .button-1 {
+        width: 100%;
+        margin-left: 0;
+        bottom: 0;
+    }
+
+    .main__out label {
+        margin-left: 5%;
+    }
+
+    .totalPrice {
+        width: 60%;
+        margin: 2% 5%;
+    }
+
+    .Payment {
+        width: 80%;
+        margin: 2% 5%;
+    }
+
+    .return {
+        width: 100%; /* Sesuaikan lebar sesuai kebutuhan pada layar kecil */
+        margin: 0;
+        position: relative;
+        left: 10px;
+    }
+
+    .out__float-right {
+        flex-direction: column;
+        align-items: flex-start;
+        float: none;
+        position: static;
+        bottom: 0;
+        right: 0;
+    }
+
+    .out__float-right input {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .button-2
+   {
+        width: 100%;
+        margin: 2% 5%;
+    }
+    .button-3{
+        width: 90%;
+        margin: 2% 5%; 
+    }
+    .popup {
+        width: 80%;
+        height: 30%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .popup p {
+        margin-top: 10%;
+        font-size: 18px; /* Adjust font size for smaller screens */
+        font-weight: 500;
+    }
+
+    .popup button {
+        width: 50%;
+        height: 15%;
+        margin-top: 10%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

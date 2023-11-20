@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/transaksi.css">
+    <title>Transaksi</title>
+</head>
+<body>
+    <nav class="nav">
+        <!-- menu -->
+        <section class="nav__item">
+            <section class="">
+                <a href="#" class="nav__item--1">Home</a>
+                <a href="#" class="nav__item--2">Transaksi</a>
+            </section>
+            <section>
+                <a href="#" class="nav__item--3">Logout</a>
+            </section>
+        </section>
+    </nav>
+
+    <main class="main">
+        <section class="main__body">
+            <section>
+                <label for="transactionNumber">No Transaksi</label>
+                <input type="text" class="transactionNumber">
+            </section>
+            
+            <section>
+                <label for="transactionDate">Tanggal Transaksi</label>
+                <input type="date" class="transactionDate">
+            </section>
+            <section>
+                <label for="customerName">Nama Customer</label>
+                <input type="text" class="customerName">
+            </section>
+            <section>
+                <label for="selectedPackage">Pilihan Paket</label>
+                <input type="text" class="selectedPackage">
+            </section>
+            <section>
+                <label for="packagePrice">Harga Paket</label>
+                <input type="text" class="packagePrice">
+            </section>
+            <section class="float-right">
+                <label><input type="radio" name="additionalPackage">Tidak ada Tambahan - Rp.0</label>
+                <label><input type="radio" name="additionalPackage">Wax - Rp 10.000</label>
+                <label><input type="radio" name="additionalPackage">Fogging - Rp. 20.000</label>
+            </section>
+            <section>
+                <button class="button-1">Hitung Total Harga</button>
+            </section>
+        </section>
+    </main>
+
+    <section class="main__out">
+        <section>
+            <label for="totalPrice">Total Harga</label>
+            <input type="text" class="totalPrice">
+        </section>
+        <section>
+            <label for="Payment">Pembayaran</label>
+            <input type="text" class="Payment">
+            
+            <section class="popup" id="popup">
+                <p>Transaksi Berhasil <br> Kembali Ke Home</p>
+                <button type="button" ><a href="landingpage.html">Ok</a></button>
+            </section>
+        </section>
+        <section class="out__float-right">
+            <label for="transactionChange">Kembalian</label>
+            <input type="text" class="return">
+        </section>
+        <section class="btn">
+            <button class="button-2">Hitung Kembalian</button>
+            <button class="button-3" onclick="openPopup()">Simpan Transaksi</button>
+        </section>
+    </section>
+    
+    <footer class="footer">
+        <p>@copyright nouvandra eka</p>
+    </footer>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

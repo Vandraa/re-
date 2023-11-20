@@ -1,0 +1,80 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F3F1F1;
+}
+
+.navbar{
+    margin: 30px;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #C4C4C4;
+}
+
+.nav__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item a{
+    font-weight: bold;
+    color: #000;
+    margin: 40px;
+}
+
+.main{
+    margin: 30px; 
+    border-radius: 5px;
+    background-color: #C4C4C4;
+}
+
+.inbox{
+    height: 410px;
+}
+
+.inbox__body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;  /* Membagi form menjadi dua kolom */
+}
+
+.inbox__body label{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inbox__body input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 15px;
+    width: 30%;
+    border: 0px;
+}
+
+
+.transaksi-radio{
+    margin-top: -260px;
+    margin-left: 800px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn__hitung{
+    margin: 200px 830px;
+}
+
+.btn__hitung button{
+    width: 160px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px 0px;
+}

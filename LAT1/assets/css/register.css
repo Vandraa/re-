@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+}
+
+.nav ul li{
+    margin: 15px 30px;
+}
+
+.nav a{
+    color: #000;
+    margin: 5px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    background-color: #103AB9;
+}
+
+.kolom{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.kolom__pertama{
+    width: 70%;
+    padding: 20px;
+}
+
+.baris__pertama{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.baris__kedua,
+.baris__ketiga,
+.baris__keempat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.isi__pertama,
+.isi__kedua,
+.isi__ketiga{
+    display: flex;
+    flex-direction: column;
+}
+
+.isi__pertama label,
+.isi__kedua label,
+.isi__ketiga label{
+    margin: 10px;
+}
+
+.isi__pertama input{
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    margin: 10px;
+    background-color: #ECECEC; 
+}
+
+.isi__kedua input{
+    width: 500px;
+    height: 40px;
+    border: 0px;
+    margin: 10px;
+    background-color: #ECECEC; 
+}
+
+.isi__ketiga input{
+    width: 240px;
+    height: 40px;
+    border: 0px;
+    margin: 10px;
+    background-color: #ECECEC;
+}
+
+.isi__keempat button{
+    position: relative;
+    right: 40px;
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    margin: 50px 10px;
+    background-color: #ECECEC;
+}
+
+.sidebar{
+    display: flex;
+    width: 30%;
+    background-color: #ECECEC;
+}
+
+.sidebar ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 90px 50px;
+}
+
+.sidebar a{
+    font-size: 32px;
+    margin: 20px;
+    color: #000;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: #103AB9;
+}

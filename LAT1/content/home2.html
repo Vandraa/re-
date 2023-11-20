@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid black;
+            width: 100%;
+            height: 80px;
+        }
+
+        .nav ul li{
+            margin: 15px 20px;
+        }
+
+        .nav a{
+            color: black;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: blue;
+        }
+
+        .kolom{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .kolom__pertama{
+            border: 1px solid black;
+            width: 70%;
+            padding: 20px;
+        }
+
+        .kolom__pertama img{
+            width: 93%;
+            height: 200px;
+            margin: 35px 30px;
+        }
+
+        .kolom__pertama p{
+            width: 90%;
+            margin: 30px;
+        }
+
+        .sidebar{
+            border: 1px solid black;
+            width: 30%;
+        }
+
+        .sidebar ul li {
+            display: flex;
+            flex-direction: column;
+            margin: 100px 50px;
+        }
+
+        .sidebar a{
+            color: #000;
+            font-size: 32px;
+            margin: 20px;
+        }
+
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="">Beranda</a>
+                <a href="">Layanan Kami</a>
+                <a href="">Tentang Kami</a>
+                <a href="">Kontak Kami</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="banner">
+            <h1>Selamat Datang Di Website Kami!</h1>
+        </section>
+
+        <section class="kolom">
+            <section class="kolom__pertama">
+                <img src="../assets/image/p.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo voluptas porro cumque sapiente veritatis, soluta illo ipsum alias nesciunt quaerat incidunt consequuntur quasi, quia, dicta delectus ullam ipsam voluptates. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aspernatur voluptatem, illum quod id architecto quibusdam voluptate non amet rem eum? Nulla assumenda molestiae incidunt autem sint, fuga perspiciatis expedita.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam corrupti consequatur doloremque consectetur unde, eius tenetur asperiores maiores pariatur aliquam inventore nesciunt laborum assumenda aut cupiditate nam! Fugit, consequatur provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aperiam itaque modi perspiciatis et ab, tempora repellendus magnam est laborum voluptatum ullam atque vitae quos quasi corporis cumque inventore? Minima. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad magnam ratione nesciunt qua.</p>
+            </section>
+
+            <nav class="sidebar">
+                <ul>
+                    <li>
+                        <a href="">Artikel</a>
+                        <a href="">Bantuan</a>
+                        <a href="">Kuesioner</a>
+                        <a href="">Login</a>
+                        <a href="">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>@copyright nouvandraeka</footer>
+</body>
+</html>
